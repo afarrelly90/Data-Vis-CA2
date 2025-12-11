@@ -57,7 +57,7 @@ h2{
 }
 
 .header-pulse {
-    animation: colourPulse 4s infinite ease-in-out; 
+    animation: colourPulse 3.5s infinite ease-in-out; 
 }
 
 .hero-section .display-3 {
@@ -131,4 +131,12 @@ h2{
     background-color: #e9ecef;
     transform: translateX(5px);
 }
-
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.5s ease-out, transform .5s ease-out;
+}
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

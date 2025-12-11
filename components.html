@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Technical Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .code-block {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <h1 class="text-primary fw-bold mb-4">Portfolio Technical Documentation</h1>
+        <p class="lead">This document outlines the usage of Bootstrap 5 components and custom JavaScript implementations within the main <code>index.html</code> portfolio page.</p>
+
+        <hr class="my-5">
+
+        <section id="bootstrap-components" class="mb-5">
+            <h2 class="mb-4">Bootstrap Components Used</h2>
+            
+            <h3 class="text-info">Navigation Bar (Navbar)</h3>
+            <p>The primary navigation bar uses the standard Bootstrap `navbar` component with the following customizations:</p>
+            <ul>
+                <li><strong>Sticky-top:</strong> Ensures the navbar remains visible when scrolling.</li>
+                <li><strong>navbar-dark & bg-dark:</strong> Provides a dark theme against the light page content.</li>
+                <li><strong>ms-auto:</strong> Uses utility classes to push the navigation links to the right.</li>
+                <li><strong>Dynamic Class:</strong> The custom JavaScript Scroll-Spy applies the `active` class to `nav-link` elements.</li>
+            </ul>
+            <p>Code Snippet:</p>
+                <pre class="code-block">&lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"&gt;
+                &lt;div class="container"&gt;
+                    &lt;a class="navbar-brand" href="#home"&gt;AF&lt;/a&gt;
+                    &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+                        &lt;ul class="navbar-nav ms-auto"&gt;
+                            &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/nav&gt;</pre>
+
+            <h3 class="text-info mt-5">Contact Modal</h3>
+            <p>A Bootstrap Modal component is used to display contact information, accessed by the buttons in the <strong>Hero</strong> and <strong>Contact</strong> sections.</p>
+            <ul>
+                <li><strong>Data Attributes:</strong> Triggered using `data-bs-toggle="modal"` and `data-bs-target="#contactModal"`.</li>
+                <li><strong>Content:</strong> Includes an unordered list (`list-unstyled`) for clear contact details.</li>
+            </ul>
+            <p>Code Snippet (Trigger Button):</p>
+            <pre class="code-block">&lt;button type="button" class="btn btn-primary btn-lg" 
+                data-bs-toggle="modal" data-bs-target="#contactModal"&gt;
+                Contact Me
+            &lt;/button&gt;</pre>
+                        <p>Code Snippet (Modal Structure):</p>
+                        <pre class="code-block">&lt;div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"&gt;
+                &lt;!-- modal content here --&gt;
+            &lt;/div&gt;</pre>
+
+            <h3 class="text-info mt-5">Cards (Skills, Experience & Projects)</h3>
+            <p>Cards are heavily used for consistent, responsive grouping of content across the portfolio.</p>
+            <ul>
+                <li><strong>Card Header/Body/Footer:</strong> Used to separate the project details and grades.</li>
+                <li><strong>h-100 & shadow-lg:</strong> Ensures all of the cards within a row have the same height and gives them a shadow.</li>
+                <li><strong>Custom Class:</strong> The `hover-card` class applies a slight visual lift effect on hover (CSS customization).</li>
+                <li><strong>Badges:</strong> Used extensively to categorize languages and technologies. In the <strong>Skills</strong> section, they use the `rounded-pill` style and distinct background colors (e.g., `text-bg-dark`, `text-bg-primary`) for visual grouping.</li>
+            </ul>
+
+            <p>Code Snippet:</p>
+            <pre class="code-block">&lt;div class="progress mb-4" role="progressbar" style="height: 6px;"&gt;
+            &lt;div class="progress-bar bg-success" style="width: 95%"&gt;&lt;/div&gt;
+            &lt;/div&gt;</pre>
+        </section>
+
+        <section id="layout-utilities" class="mb-5">
+            <h2 class="mb-4">Layout, Grid, & Utilities</h2>
+
+            <h3 class="text-info">Grid System</h3>
+            <p>The standard Bootstrap 12-column grid is used for all major layout areas, ensuring a fully responsive design across all devices.</p>
+            <ul>
+                <li><strong>Responsive Layouts:</strong> The Projects section uses `col-lg-4` (3-wide on large screens) and `col-md-6` (2-wide on medium screens).</li>
+                <li><strong>Column Restriction:</strong> The <strong>About Me</strong> and <strong>Experience</strong> sections restrict content width using `col-lg-8` centered via `justify-content-center` to improve text readability.</li>
+            </ul>
+
+            <h3 class="text-info mt-5">Spacing and Utilities</h3>
+            <p>Spacing utility classes were used a lot to maintain consistent vertical rhythm and component separation:</p>
+            <ul>
+                <li><strong>Vertical spacing:</strong> `py-5` is then applied to all of the main `&lt;section&gt;` tags to provide robust top/bottom padding for accurate Scroll-Spy detection.</li>
+                <li><strong>Flexbox:</strong> `d-flex` and related classes (`gap-3`, `justify-content-between`, `align-items-start`) are used for internal alignment (e.g., placing the logo and text side-by-side in the Experience cards).</li>
+            </ul>
+
+            <h3 class="text-info mt-5">Linked Cards (Experience)</h3>
+            <p>The entire <strong>Experience</strong> card is wrapped in an anchor tag to make the company logo and details fully clickable, linking out to the company's LinkedIn or website.</p>
+            <ul>
+                <li><strong>Structure:</strong> The `&lt;div class="card"&gt;` is wrapped inside an `&lt;a&gt;` tag with `class="text-decoration-none d-block project-link"` to reset link styling and ensure the link spans the full card width.</li>
+                <li><strong>Image Component:</strong> Company logos are included using the `&lt;img&gt;` tag with fixed height/width styles to maintain layout consistency.</li>
+            </ul>
+        </section>
+
+        <section id="custom-javascript" class="mb-5">
+            <h2 class="mb-4">Custom JavaScript Features</h2>
+            
+            <h3 class="text-info">Time of day greeting</h3>
+            <p>A function runs on page load to check the current hour and dynamically update the greeting message in the Hero section.</p>
+            <p>Code Snippet:</p>
+            <pre class="code-block">const hour = new Date().getHours();
+                const hour = new Date().getHours();
+                const greeting = document.getElementById('greeting');
+                let greetingText = 'Hello,';
+
+                if (hour < 12) {
+                    greetingText = 'Good Morning,';
+                } else if (hour < 18) {
+                    greetingText = 'Good Afternoon,';
+                } else {
+                    greetingText = 'Good Evening,';
+                }
+                
+                if (greeting) {
+                    greeting.innerText = greetingText;
+                }
+            </pre>
+
+            <h3 class="text-info mt-5">Custom Scroll-Spy Implementation</h3>
+            <p>A manual Scroll-Spy script is implemented to highlight the current section in the fixed navigation bar. This uses an event listener and includes fixes for the smaller sections such as the contact section (uses end of page detection).</p>
+            <p>Initially, <a href="https://getbootstrap.com/docs/4.0/components/scrollspy/" target="_blank">the bootstrap scroll spy </a> was considered to be used for this but it contained inaccuracies with the smaller sections </p>            <ul>
+                <li><strong>Offset:</strong> A fixed `+ 120` offset is added to `window.scrollY` to account for the sticky navbar height.</li>
+                <li><strong>End-of-Page Fix:</strong> Special logic is used to force the 'Contact' link to be active when the user scrolls to the bottom of the page (within 5px of the maximum scroll).</li>
+            </ul>
+            <p>Code Snippet:</p>
+            <pre class="code-block">
+const updateScroll =() => {
+        const scrollPos = window.scrollY + 120;
+        let currentSectionId = "home"; 
+        sections.forEach((sec) => {
+            const top = sec.offsetTop - 140; 
+            const bottom = top + sec.offsetHeight;
+
+            if (scrollPos >= top && scrollPos < bottom) {
+                currentSectionId = sec.getAttribute("id");
+            }
+        });
+
+        const pageHeight = document.body.offsetHeight;
+        const viewportHeight = window.innerHeight;
+        
+        if (window.scrollY + viewportHeight >= pageHeight - 5) {
+            currentSectionId = 'contact';
+        }
+
+        if (window.scrollY < 10) { 
+            currentSectionId = 'home';
+        }
+        navLinks.forEach(link => { link.classList.remove("active"); });
+        brandLink.classList.remove("active"); 
+
+        if (currentSectionId === 'home') {
+            brandLink.classList.add('active'); 
+        } else {
+            navLinks.forEach((link) => {
+                if (link.getAttribute("href") === `#${currentSectionId}`) {
+                    link.classList.add("active");
+                }
+            });
+        }
+    };
+            </pre>
+        </section>
+
+        <footer class="text-center mt-5 mb-3 p-3 border-top">
+            <p class="text-muted small">End of Documentation</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

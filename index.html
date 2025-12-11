@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@
                     <h5 class="text-info" id="greeting">Hello!</h5>
                     <h1 class="display-3 fw-bold header-pulse">I'm Aaron Farrelly</h1>
                     <p class="lead">Former Cloud DevOps Engineer | 4th Year Computing Student</p>
-                    <p class="mb-4">Specializing in Azure, Terraform, and Python automation.</p>
+                    <p class="mb-4">Specializing in Software Development, Cloud Technologies, and Python Automation.</p>
                     <div class="d-flex gap-3">
                         <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
                             data-bs-target="#contactModal">
@@ -47,7 +48,7 @@
                 </div>
                 <div class="col-md-4 text-center d-none d-md-block">
                     <img src="images/profile_photo.jpeg" alt="Aaron Farrelly"
-                    class="img-fluid rounded-circle border border-4 border-white shadow">
+                        class="img-fluid rounded-circle border border-4 border-white shadow">
                 </div>
             </div>
         </div>
@@ -55,117 +56,152 @@
 
     <div class="container my-5">
 
-        <section id="about" class="py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <h2 class="text-center mb-4 text-primary fw-bold">About Me</h2>
-                    <p class="lead text-muted">
-                        Motivated final-year Computer Science student with hands-on experience in cloud infrastructure,
-                        automation, and software development.
-                    </p>
-                    <p>
-                        During my internship as a <strong>Cloud DevOps Engineer at Irish Life</strong>,
-                        I contributed to securing and maintaining Azure environments using Terraform and PowerShell.
-                        My academic background includes strong foundations in software development, testing, security,
-                        and data analysis.
-                        I’m eager to apply my technical skills, adaptability, and communication strengths to a
-                        rotational graduate role.
-                    </p>
+        <section id="about" class="py-5 scroll-reveal">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8"> 
+                        <h2 class="text-center mb-5 text-primary fw-bold">About Me</h2>
+                        <p class="lead fw-bold text-dark text-center mb-4">
+                            Motivated final-year Computer Science student with hands-on experience in cloud infrastructure, 
+                            automation, and full-stack software development.
+                        </p>
+                        <hr class="my-4">
+                        <p class="text-dark">
+                            During my internship as a <strong>Cloud DevOps Engineer at Irish Life</strong>, I was responsible for securing and maintaining Azure environments, utilizing 
+                            <strong>Infrastructure as Code (IaC)</strong> with <strong>Terraform</strong> and automating security tasks using <strong>PowerShell</strong>. I successfully implemented CI/CD pipelines to ensure compliance.
+                        </p>
+
+                        <p class="text-dark mb-0">
+                            My academic focus includes strong foundations in software development <strong> (Python, C#, JavaScript)</strong>, rigorous testing practices, application security, and data analysis. I am actively seeking a graduate role where I can apply my technical skills, adaptability, and proven communication strengths.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="skills" class="py-5">
+        <section id="skills" class="py-5 scroll-reveal">
             <h2 class="text-center mb-5 text-primary fw-bold">Technical Skills</h2>
             <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-lg hover-card">
                         <div class="card-body text-center">
-                        <i class="fa-solid fa-code fa-2x mb-3 text-info"></i>
-                            <h5 class="card-title">Languages</h5>
+                            <i class="fa-solid fa-code fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title text-dark">Languages</h5>
+                            <div class="progress mb-4" role="progressbar" style="height: 6px;">
+                                <div class="progress-bar bg-primary" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                             <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
-                                <span class="badge bg-secondary">Python</span>
-                                <span class="badge bg-secondary">Java</span>
-                                <span class="badge bg-secondary">C#</span>
-                                <span class="badge bg-secondary">C++</span>
-                                <span class="badge bg-secondary">JavaScript</span>
-                                <span class="badge bg-secondary">SQL</span>
-                                <span class="badge bg-secondary">PowerShell</span>
+                                <span class="badge rounded-pill text-bg-primary">Python</span>
+                                <span class="badge rounded-pill text-bg-primary">Java</span>
+                                <span class="badge rounded-pill text-bg-primary">C#</span>
+                                <span class="badge rounded-pill text-bg-primary">C++</span>
+                                <span class="badge rounded-pill text-bg-primary">JavaScript</span>
+                                <span class="badge rounded-pill text-bg-primary">SQL</span>
+                                <span class="badge rounded-pill text-bg-primary">PowerShell</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-lg hover-card">
                         <div class="card-body text-center">
-                            <i class="fa-solid fa-cloud fa-2x mb-3 text-info"></i>
-                            <h5 class="card-title">Cloud & DevOps</h5>
+                            <i class="fa-solid fa-cloud fa-2x mb-3 text-dark"></i>
+                            <h5 class="card-title text-dark">Cloud & DevOps</h5>
+                            <div class="progress mb-4" role="progressbar" style="height: 6px;">
+                                <div class="progress-bar bg-dark" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                             <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
-                                <span class="badge bg-secondary">Azure</span>
-                                <span class="badge bg-secondary">Terraform</span>
-                                <span class="badge bg-secondary">Azure DevOps</span>
-                                <span class="badge bg-secondary">KQL</span>
-                                <span class="badge bg-secondary">Git</span>
-                                <span class="badge bg-secondary">Docker</span>
+                                <span class="badge rounded-pill text-bg-dark">Azure</span>
+                                <span class="badge rounded-pill text-bg-dark">Terraform</span>
+                                <span class="badge rounded-pill text-bg-dark">Azure DevOps</span>
+                                <span class="badge rounded-pill text-bg-dark">KQL</span>
+                                <span class="badge rounded-pill text-bg-dark">Git</span>
+                                <span class="badge rounded-pill text-bg-dark">Docker</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-lg hover-card">
                         <div class="card-body text-center">
                             <i class="fa-solid fa-layer-group fa-2x mb-3 text-info"></i>
-                            <h5 class="card-title">Frameworks & Tools</h5>
+                            <h5 class="card-title text-dark">Frameworks & Tools</h5>
+                            <div class="progress mb-4" role="progressbar" style="height: 6px;">
+                                <div class="progress-bar bg-info" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                             <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
-                                <span class="badge bg-secondary">Django</span>
-                                <span class="badge bg-secondary">Blazor WASM</span>
-                                <span class="badge bg-secondary">Bootstrap</span>
-                                <span class="badge bg-secondary">Selenium</span>
-                                <span class="badge bg-secondary">Pytest</span>
-                                <span class="badge bg-secondary">MongoDB</span>
+                                <span class="badge rounded-pill text-bg-info">Django</span>
+                                <span class="badge rounded-pill text-bg-info">Blazor WASM</span>
+                                <span class="badge rounded-pill text-bg-info">Bootstrap</span>
+                                <span class="badge rounded-pill text-bg-info">Selenium</span>
+                                <span class="badge rounded-pill text-bg-info">Pytest</span>
+                                <span class="badge rounded-pill text-bg-info">MongoDB</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="experience" class="py-5">
-            <h2 class="mb-4 text-primary fw-bold">Work Experience</h2>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h4 class="card-title mb-0">Cloud DevOps Engineer Intern</h4>
-                        <span class="badge bg-primary">Irish Life</span>
+<section id="experience" class="py-5 scroll-reveal">
+    <h2 class="mb-4 text-primary fw-bold">Work Experience</h2> 
+    <div class="row ">
+        <div class="col-lg-10 mx-auto">
+            <a href="https://www.linkedin.com/company/irish-life-group/" target="_blank" class="text-decoration-none d-block project-link">
+                <div class="card mb-4 shadow-sm hover-card"> 
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <h4 class="card-title mb-0">Cloud DevOps Engineer Intern</h4>
+                                <span class="badge bg-primary fs-6">Irish Life</span> 
+                                <p class="text-muted small mb-0">February 2025 - August 2025</p>
+                            </div>
+                            
+                            <img src="images/irish_life.png" alt="Irish Life Logo" 
+                                 class="img-fluid rounded-3 me-2" 
+                                 style="width: 80px; height: 80px; object-fit: contain;"> 
+                        </div>
+                        <hr class="my-2"> 
+                        <ul>
+                            <li>Contributed to the GACS cloud team, maintaining cloud infrastructure using
+                                <strong>Terraform, Azure DevOps, and PowerShell</strong>.</li>
+                            <li>Developed a reusable Recovery Services Vault IaC module and automated tagging for
+                                <strong>7,000+ resources</strong>.
+                            </li>
+                            <li>Managed malicious IP blocking modules (geo-location filtering) and executed vulnerability
+                                reports using KQL.</li>
+                            <li>Maintained environment health and handled Key Vault secret renewals.</li>
+                            <li>Participated in daily SCRUM meetings to discuss progression.</li>
+                        </ul>
                     </div>
-                    <p class="text-muted small">February 2025 – August 2025</p>
-                    <ul>
-                        <li>Contributed to the GACS team, maintaining cloud infrastructure using <strong>Terraform,
-                                Azure DevOps, and PowerShell</strong>.</li>
-                        <li>Developed a reusable Recovery Services Vault IaC module and automated tagging for
-                            <strong>7,000+ resources</strong>.</li>
-                        <li>Managed malicious IP blocking modules (geo-location filtering) and executed vulnerability
-                            reports using KQL.</li>
-                        <li>Maintained environment health and handled Key Vault secret renewals.</li>
-                    </ul>
                 </div>
-            </div>
-
-            <div class="card mb-4 shadow-sm">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h4 class="card-title mb-0">Postal Operative</h4>
-                        <span class="badge bg-dark">An Post</span>
+            </a>
+            <a href="https://www.linkedin.com/company/an-post/" target="_blank" class="text-decoration-none d-block project-link">
+                <div class="card mb-4 shadow-sm hover-card"> 
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <h4 class="card-title mb-0">Postal Operative</h4>
+                                <span class="badge bg-primary fs-6">An Post</span> 
+                                <p class="text-muted small mb-0">Dec 2021 - Dec 2025 (Seasonal)</p>
+                            </div>
+                            
+                            <img src="images/an_post.png" alt="An Post Logo" 
+                                 class="img-fluid rounded-3 me-2" 
+                                 style="width: 80px; height: 80px; object-fit: contain;"> 
+                        </div>
+                        <hr class="my-2">
+                        
+                        <ul>
+                            <li>Worked effectively in a fast-paced team during peak season operations.</li>
+                            <li>Strengthened communication, adaptability, and time management skills.</li>
+                        </ul>
                     </div>
-                    <p class="text-muted small">Dec 2021 – Dec 2025 (Seasonal)</p>
-                    <ul>
-                        <li>Worked effectively in a fast-paced team during peak season operations.</li>
-                        <li>Strengthened communication, adaptability, and time management skills.</li>
-                    </ul>
                 </div>
-            </div>
-        </section>
+            </a>
+        </div> 
+    </div>
+</section>
 
-        <section id="projects" class="py-5">
+        <section id="projects" class="py-5 scroll-reveal">
             <h2 class="mb-4 text-primary fw-bold">Academic & Personal Projects</h2>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -211,32 +247,42 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 shadow hover-card">
-                        <div class="card-header bg-dark text-white">Blazor WebAssembly</div>
-                        <div class="card-body">
-                            <h5 class="card-title">TVMaze Blazor App</h5>
-                            <p class="card-text small">A Blazor WASM application fetching TV show data.</p>
-                            <ul class="small text-muted">
-                                <li>Utilized TVMaze API for data consumption.</li>
-                                <li>Implemented responsive UI using MudBlazor component library.</li>
-                                <li>Showcases proficiency in C# and front-end state management.</li>
-                            </ul>
-                            <div class="mt-3">
-                                <span class="badge bg-info text-dark">C#</span>
-                                <span class="badge bg-info text-dark">Blazor WASM</span>
-                                <span class="badge bg-info text-dark">MudBlazor</span>
+                    <a href="https://afarrelly90.github.io/CA3_WebApp_X00203931/" target="_blank"
+                        class="text-decoration-none d-block project-link">
+                        <div class="card h-100 shadow hover-card">
+                            <div
+                                class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                                Blazor WebAssembly
+                                <i class="fa-solid fa-up-right-from-square small"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">TVMaze Blazor App</h5>
+                                <p class="card-text small">A Blazor WASM application fetching TV show data.</p>
+                                <ul class="small text-muted">
+                                    <li>Utilized TVMaze API for data consumption.</li>
+                                    <li>Implemented responsive UI using MudBlazor component library.</li>
+                                    <li>Showcases proficiency in C# and front-end state management.</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-info text-dark">C#</span>
+                                    <span class="badge bg-info text-dark">Blazor WASM</span>
+                                    <span class="badge bg-info text-dark">MudBlazor</span>
+                                </div>
+                            </div>
+                            <div
+                                class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center">
+                                <small class="text-success fw-bold">Live Demo Available</small>
+                                <span class="btn btn-sm btn-outline-primary shadow-sm px-3">
+                                    View Live Site
+                                </span>
                             </div>
                         </div>
-                        <div class="card-footer bg-white border-top-0">
-                            <small class="text-secondary fw-bold">Awaiting Grading</small>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                </div>
+            </div>
         </section>
-
-        <section id="education" class="py-5">
-            <div class="row"> 
+        <section id="education" class="py-5 scroll-reveal">
+            <div class="row">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <h2 class="mb-4 text-primary fw-bold">Education</h2>
                     <div class="list-group shadow-sm">
@@ -248,8 +294,9 @@
                             <p class="mb-1 text-primary">Technological University Dublin</p>
                             <small><strong>Avg GPA: 3.52 (First Class Honours)</strong></small>
                             <p class="small mt-2">
-                                <strong>Key Modules:</strong> DSA (A), Cloud Services (B-), Software Dev 3 (A), Advanced DB
-                                (A).
+                                <strong>Key Modules:</strong> DSA (A), Cloud Services (B-), Software Dev 3 (A), Advanced
+                                DB
+                                (A)
                             </p>
                         </div>
                         <div class="list-group-item list-group-item-action">
@@ -265,27 +312,36 @@
                 <div class="col-lg-6">
                     <h2 class="mb-4 text-primary fw-bold">Achievements</h2>
                     <ul class="list-group shadow-sm mb-4">
-                        <li class="list-group-item"><i class="fa-solid fa-trophy text-warning me-2"></i> TUH AWS Health Hackathon 2023 - 
-                            <a href="https://www.imt.ie/news/tu-dublin-students-create-innovative-tech-based-solutions-to-tackle-healthcare-issues-26-09-2023/">
+                        <li class="list-group-item"><i class="fa-solid fa-trophy text-warning me-2"></i> TUH AWS Health
+                            Hackathon 2023 -
+                            <a
+                                href="https://www.imt.ie/news/tu-dublin-students-create-innovative-tech-based-solutions-to-tackle-healthcare-issues-26-09-2023/">
                                 <strong>Best Patient Benefit</strong>
-                            </a></li>
-                        <li class="list-group-item"><i class="fa-solid fa-certificate text-success me-2"></i> NVIDIA DLI -
+                            </a>
+                        </li>
+                        <li class="list-group-item"><i class="fa-solid fa-certificate text-success me-2"></i> NVIDIA DLI
+                            -
                             <a href="https://learn.nvidia.com/certificates?id=dfb3ce98989e44d395736401c86afad3">
-                            <strong>Fundamentals of Deep Learning</strong>
-                            </a></li>
-                        <li class="list-group-item"><i class="fa-solid fa-users text-info me-2"></i> <strong>PRO
-                                (2023-24)</strong> TU Dublin Student Developers Society</li>
+                                <strong>Fundamentals of Deep Learning</strong>
+                            </a>
+                        </li>
+                        <li class="list-group-item"><i class="fa-solid fa-users text-info me-2"></i> PRO (2023-24) -
+                            <a href="https://www.linkedin.com/company/student-developers-society/about/">
+                                <strong>TU Dublin Student Developers Society</strong>
+                            </a>
+                        </li>
                     </ul>
                     <h3 class="mb-3 text-primary">Interests</h3>
                     <p class="text-muted">
-                        Technology trends, PC building, real-time strategy gaming, fitness, and spending time with family
+                        Technology trends, PC building, real-time strategy gaming, fitness, and spending time with
+                        family 
                         and friends.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="text-center py-5 my-5 bg-light rounded shadow-sm">
+        <section id="contact" class="text-center py-5 scroll-reveal my-5 bg-light rounded shadow-sm">
             <h2 class="mb-3 fw-bold">Get In Touch</h2>
             <p class="mb-4">I am currently looking for graduate opportunities. Feel free to reach out!</p>
             <button type="button" class="btn btn-primary btn-lg px-5" data-bs-toggle="modal"
@@ -303,7 +359,7 @@
                 <a href="https://github.com/afarrelly90" class="text-white mx-2 text-decoration-none"><i
                         class="fab fa-github fa-lg"></i> GitHub</a>
             </div>
-            <small>&copy; 2025 Aaron Farrelly. Built with Bootstrap 5.</small>
+            <small>&copy; 2025 Aaron Farrelly | Built with Bootstrap 5</small>
         </div>
     </footer>
 
